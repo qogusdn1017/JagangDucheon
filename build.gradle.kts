@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.baehyeonwoo.jagangducheon"
-version = "0.1"
+version = "0.2"
 
 repositories {
     mavenLocal()
