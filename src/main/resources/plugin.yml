@@ -1,0 +1,7 @@
+name: JagangDucheon
+main: com.baehyeonwoo.jagangducheon.Main
+version: 0.1
+api-version: 1.13
+author: BaeHyeonWoo
+website: https://baehyeonwoo.com
+description: "2021년 1월 9일 잠뜰님 대미지를 주면 똑같이 돌려받는 야생 플러그인으로 구현."
