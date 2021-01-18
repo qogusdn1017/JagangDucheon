@@ -18,14 +18,16 @@ class Main  : JavaPlugin(), Listener {
     fun onJagangDucheon(e: EntityDamageByEntityEvent) {
         val dmgr = e.damager
         val d = e.finalDamage
-
         if (e.entity !is Player) return
-        if (e.damager !is Arrow)
-            return
+        if (dmgr !is Arrow) {
+            if (dmgr is Player) {
+                dmgr.damage(d)
+            }
+            else {
+                return
+            }
+        }
         val src = (e.damager as Arrow).shooter as? Player ?: return
         src.damage(d)
-        if (dmgr is Player) {
-            dmgr.damage(d)
-        }
     }
 }
